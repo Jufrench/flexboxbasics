@@ -1,0 +1,110 @@
+/* FLEXBOX
+-------------------------*/
+
+h5 a {
+    margin-left: 5px;
+}
+
+/*MAIN AXIS*/
+
+main input[value="main-initial"]:checked ~ .flexbox {
+    justify-content: initial;
+}
+
+main input[value="main-flex-start"]:checked ~ .flexbox {
+    justify-content: flex-start;
+}
+
+main input[value="main-center"]:checked ~ .flexbox {
+    justify-content: center;
+}
+
+main input[value="main-flex-end"]:checked ~ .flexbox {
+    justify-content: flex-end;
+}
+
+main input[value="main-space-around"]:checked ~ .flexbox {
+    justify-content: space-around;
+}
+
+main input[value="main-space-between"]:checked ~ .flexbox {
+    justify-content: space-between;
+}
+
+/*CROSS AXIS*/
+main input[value="cross-initial"]:checked ~ .flexbox {
+    align-items: initial;
+}
+
+main input[value="cross-flex-start"]:checked ~ .flexbox {
+    align-items: flex-start;
+}
+
+main input[value="cross-center"]:checked ~ .flexbox {
+    align-items: center;
+}
+
+main input[value="cross-flex-end"]:checked ~ .flexbox {
+    align-items: flex-end;
+}
+
+main input[value="cross-baseline"]:checked ~ .flexbox {
+    align-items: baseline;
+}
+
+main input[value="cross-stretch"]:checked ~ .flexbox {
+    align-items: stretch;
+}
+
+main input[value="no-text"]:checked ~ .flexbox .box p {
+    display: none;
+}
+
+main input[value="add-text"]:checked ~ .flexbox .box p {
+    display: block;
+}
+
+main input[value="initial"]:checked ~ .flexbox {
+    flex-direction: initial;
+}
+
+main input[value="row"]:checked ~ .flexbox {
+    flex-direction: row;
+}
+
+main input[value="column"]:checked ~ .flexbox {
+    flex-direction: column;
+}
+
+/* FLEXBOX BOX */
+.flexbox {
+    margin-top: 2.5em;
+    border: solid 4px #ff0000;
+    display: flex;
+    height: 500px;
+}
+
+.box {
+    border: solid 3px darkblue;
+    padding: 5px;
+    width: 100px;
+    height: auto;
+    height: initial;
+    background: #FFdead;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* FOOTER */
+footer {
+    margin-top: 3em;
+    padding: 1em;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background: indianred;
+    color: aliceblue;
+    position: static;
+    bottom: 0;
+}

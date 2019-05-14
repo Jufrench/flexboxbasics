@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="author" content="Julian French">
+    <title>Flexbox Fundamentals</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <link rel="stylesheet" href="flexbox.css"> </head>
+<body>
+    <div id="wrapper">
+        <h1>Flexbox Basics by Julian French</h1>
+        <h5>Contact me @<a href="mailto:ju.french@gmail.com">ju.french@gmail.com</a></h5>
+        <hr>
+        <main>
+        <h3>Flex Direction</h3>
+        <input type="radio" value="initial" name="direction"> initial (Default)
+        <input type="radio" value="row" name="direction"> row
+        <input type="radio" value="column" name="direction"> column
+         <hr>
+          <!-- MAIN AXIS -->
+           <h3 class="title">Main Axis</h3>
+            <input type="radio" name="main-axis" value="main-initial"> initial (Default)
+            <input type="radio" name="main-axis" value="main-flex-start"> flex-start
+            <input type="radio" name="main-axis" value="main-center"> center
+            <input type="radio" name="main-axis" value="main-flex-end"> flex-end
+            <input type="radio" name="main-axis" value="main-space-around"> space-around
+            <input type="radio" name="main-axis" value="main-space-between"> space-between
+            <hr>
+            <!-- CROSS AXIS -->
+            <h3 class="title">Cross Axis</h3>
+            <input type="radio" name="cross-axis" value="cross-initial"> initial (Default)
+            <input type="radio" name="cross-axis" value="cross-flex-start"> flex-start
+            <input type="radio" name="cross-axis" value="cross-center"> center
+            <input type="radio" name="cross-axis" value="cross-flex-end"> flex-end
+            <input type="radio" name="cross-axis" value="cross-baseline"> baseline
+            <input type="radio" name="cross-axis" value="cross-stretch"> stretch
+            <br>
+            <input type="radio" name="text" value="no-text"> No Text
+            <input type="radio" name="text" value="add-text"> Add Text
+            <div class="flexbox">
+                <div class="box box1"><h3>Box 1</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis eu finibus nisl, a rhoncus urna. Phasellus neque diam, consectetur sit amet quam nec, rhoncus congue magna.</p></div>
+                <div class="box box2"><h3>Box 2</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis eu finibus nisl, a rhoncus urna. Phasellus neque diam, consectetur sit amet quam nec, rhoncus congue magna.</p></div>
+                <div class="box box3"><h3>Box 3</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis eu finibus nisl, a rhoncus urna. Phasellus neque diam, consectetur sit amet quam nec, rhoncus congue magna.</p></div>
+                <div class="box box4"><h3>Box 4</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis eu finibus nisl, a rhoncus urna. Phasellus neque diam, consectetur sit amet quam nec, rhoncus congue magna.</p></div>
+                <div class="box box5"><h3>Box 5</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis eu finibus nisl, a rhoncus urna. Phasellus neque diam, consectetur sit amet quam nec, rhoncus congue magna.</p>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+
+<footer>
+    <p>Copyright <i class="far fa-copyright"></i> 2019 Julian French</p>
+</footer>
+
+</html>
