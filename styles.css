@@ -8,11 +8,11 @@ body {
 
 h1 {
     margin: 0;
-    font-size: 1em;
+    font-size: 1.25em;
 }
 
 h2 {
-    font-size: 1.25em;
+    font-size: 1em;
     margin: 0 8px;
 }
 
@@ -23,7 +23,6 @@ h5 a {
 }
 
 /*MAIN AXIS*/
-
 main input[value="main-initial"]:checked ~ .flexbox {
     justify-content: initial;
 }
@@ -100,6 +99,7 @@ main input[value="column"]:checked ~ .flexbox {
     display: flex;
     height: auto;
     min-height: 750px;
+    flex-wrap: wrap;
 }
 
 .box {

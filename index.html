@@ -10,41 +10,58 @@
     <link rel="stylesheet" href="styles.css"> </head>
 <body>
     <div id="wrapper">
-        <h1>Flexbox Basics by Julian French</h1>
+        <h1>Flexbox Basics</h1>
         <hr>
         <main>
         <h2>Flex Direction</h2>
-        <input type="radio" value="initial" name="direction"> initial (Default)
-        <input type="radio" value="row" name="direction"> row
-        <input type="radio" value="column" name="direction"> column
+        <input id="direction-default" type="radio" value="initial" name="direction">
+        <label for="direction-default">initial (default)</label>
+        <input id="direction-row" type="radio" value="row" name="direction">
+        <label for="direction-row">row</label>
+        <input id="direction-column" type="radio" value="column" name="direction">
+        <label for="direction-column">column</label>
          <hr>
         <!-- MAIN AXIS -->
         <h2 class="title">Main Axis</h2>
-        <input type="radio" name="main-axis" value="main-initial"> initial (Default)
-        <input type="radio" name="main-axis" value="main-flex-start"> flex-start
-        <input type="radio" name="main-axis" value="main-center"> center
-        <input type="radio" name="main-axis" value="main-flex-end"> flex-end
-        <input type="radio" name="main-axis" value="main-space-around"> space-around
-        <input type="radio" name="main-axis" value="main-space-between"> space-between
+        <input id="main-initial" type="radio" name="main-axis" value="main-initial">
+        <label for="main-initial">initial (default)</label>
+        <input id="main-start" type="radio" name="main-axis" value="main-flex-start">
+        <label for="main-start">flex-start</label>
+        <input id="main-center" type="radio" name="main-axis" value="main-center">
+        <label for="main-center">center</label>
+        <input id="main-end" type="radio" name="main-axis" value="main-flex-end">
+        <label for="main-end">flex-end</label>
+        <input id="main-around" type="radio" name="main-axis" value="main-space-around">
+        <label for="main-around">space-around</label>
+        <input id="main-between" type="radio" name="main-axis" value="main-space-between">
+        <label for="main-between">space-between</label>
         <hr>
         <!-- CROSS AXIS -->
         <h2 class="title">Cross Axis</h2>
-        <input type="radio" name="cross-axis" value="cross-initial"> initial (Default)
-        <input type="radio" name="cross-axis" value="cross-flex-start"> flex-start
-        <input type="radio" name="cross-axis" value="cross-center"> center
-        <input type="radio" name="cross-axis" value="cross-flex-end"> flex-end
-        <input type="radio" name="cross-axis" value="cross-baseline"> baseline
-        <input type="radio" name="cross-axis" value="cross-stretch"> stretch
+        <input id="cross-initial" type="radio" name="cross-axis" value="cross-initial">
+        <label for="cross-initial">initial (default)</label>
+        <input id="cross-start" type="radio" name="cross-axis" value="cross-flex-start">
+        <label for="cross-start">flex-start</label>
+        <input id="cross-center" type="radio" name="cross-axis" value="cross-center">
+        <label for="cross-center">center</label>
+        <input id="cross-end" type="radio" name="cross-axis" value="cross-flex-end">
+        <label for="cross-end">flex-end</label>
+        <input id="cross-baseline" type="radio" name="cross-axis" value="cross-baseline">
+        <label for="cross-baseline">baseline</label>
+        <input id="stretch" type="radio" name="cross-axis" value="cross-stretch">
+        <label for="stretch">stretch</label>
         <br>
-        <input type="radio" name="text" value="no-text"> No Text
-        <input type="radio" name="text" value="add-text"> Add Text
-            <div class="flexbox">
-                <div class="box box1"><h3>Box 1</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p></div>
-                <div class="box box2"><h3>Box 2</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p></div>
-                <div class="box box3"><h3>Box 3</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p></div>
-                <div class="box box4"><h3>Box 4</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p></div>
-                <div class="box box5"><h3>Box 5</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p></div>
-            </div>
+        <input id="no-text" type="radio" name="text" value="no-text">
+        <label for="no-text">No Text</label>
+        <input id="add-text" type="radio" name="text" value="add-text">
+        <label for="add-text">Add Text</label>
+        <div class="flexbox">
+            <div class="box box1"><h3>Box 1</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p></div>
+            <div class="box box2"><h3>Box 2</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p></div>
+            <div class="box box3"><h3>Box 3</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p></div>
+            <div class="box box4"><h3>Box 4</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p></div>
+            <div class="box box5"><h3>Box 5</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p></div>
+        </div>
         </main>
     </div>
 </body>
