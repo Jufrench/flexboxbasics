@@ -6,6 +6,16 @@ body {
    padding: 1.5em;
 }
 
+h1 {
+    margin: 0;
+    font-size: 1em;
+}
+
+h2 {
+    font-size: 1.25em;
+    margin: 0 8px;
+}
+
 /* FLEXBOX
 -------------------------*/
 h5 a {
@@ -88,12 +98,13 @@ main input[value="column"]:checked ~ .flexbox {
     margin-top: 2.5em;
     border: solid 4px #ff0000;
     display: flex;
-    height: 500px;
+    height: auto;
+    min-height: 750px;
 }
 
 .box {
     border: solid 3px darkblue;
-    padding: 5px;
+    padding: 10px 20px;
     width: 100px;
     height: auto;
     height: initial;
@@ -101,6 +112,14 @@ main input[value="column"]:checked ~ .flexbox {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.box h3 {
+    margin: 0 0 5px 0;
+}
+
+.box p {
+    margin: 0;
 }
 
 /* FOOTER */
